@@ -2,7 +2,7 @@ require 'gosu'
 require_relative 'Button'
 
 #shows green outline of colliders
-ShowColliders = true
+ShowColliders = false
 Width = 1920
 Height = 1080
 Ratio = {

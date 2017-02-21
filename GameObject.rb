@@ -5,7 +5,6 @@ class GameObject < Container
 		@rel_x = rel_x
 		@rel_y = rel_y
 		@parent = parent
-		puts @parent
 		@x = @parent.x + rel_x
 		@y = @parent.y + rel_y
 		super name, @x, @y
@@ -15,7 +14,6 @@ class GameObject < Container
 	end
 
 	def update
-		puts "Parent: #{@parent.x}"
 		@x = @parent.x + @rel_x
 		@y = @parent.y + @rel_y
 
