@@ -23,10 +23,10 @@ class Window < Gosu::Window
 
 	def load
 		@containers = {}
-		@containers[:master] = Container.new("Master")
+		@containers["Turn UI"] = Container.new("Turn UI", 0, 3*Height.to_f/4)
 		@gameObjects = {}
 
-		@gameObjects["test"] = Button.new("Test", @containers[:master], 200, 200, 200, 100, "default", "Close", Proc.new{ $game.close })
+		@gameObjects["test"] = Button.new("Test", @containers["Turn UI"], 20, 20, 200, 100, "default", "Close", Proc.new{ $game.close })
 		# To Replace with loadable level files
 		# @gameObjects[:exit] = Button.new("Close", 120, 20, 100, 100, "default", "Close", $parent, Proc.new{ $game.close })
 	end
